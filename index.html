@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Iain MacMillan | Emergency Medical & Travel Insurance Profile</title>
+  <title>Iain MacMillan | ข้อมูลการแพทย์ฉุกเฉิน (Emergency Medical Profile)</title>
   <meta name="theme-color" content="#b91c1c">
   <style>
     :root {
@@ -22,7 +22,7 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Leelawadee UI", Tahoma, Arial, sans-serif;
       background: var(--slate-bg);
       color: var(--text-main);
       line-height: 1.5;
@@ -241,16 +241,16 @@
 </head>
 <body>
 
-  <!-- Top Sticky Navigation -->
+  <!-- Top Sticky Navigation (Defaults to TH) -->
   <header class="top-bar">
     <div class="top-title">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
-      <span class="en-text">EMERGENCY MEDICAL INFO</span>
-      <span class="th-text hidden">ข้อมูลการแพทย์ฉุกเฉิน</span>
+      <span class="th-text">ข้อมูลการแพทย์ฉุกเฉิน</span>
+      <span class="en-text hidden">EMERGENCY MEDICAL INFO</span>
     </div>
     <div class="lang-toggle">
-      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" id="btn-th" onclick="setLang('th')">ไทย</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn active" id="btn-th" onclick="setLang('th')">ไทย</button>
     </div>
   </header>
 
@@ -261,10 +261,10 @@
       <img src="photo.jpg" alt="Iain MacMillan" class="profile-photo" onerror="this.src='https://placehold.co/110x140?text=Photo'">
       <div class="profile-meta">
         <h1>Iain MacMillan</h1>
-        <p><strong class="en-text">DOB:</strong><strong class="th-text hidden">วันเกิด:</strong> 25/02/1973</p>
-        <p><strong class="en-text">Nationality:</strong><strong class="th-text hidden">สัญชาติ:</strong> <span class="en-text">British</span><span class="th-text hidden">บริติช (สหราชอาณาจักร)</span></p>
-        <span class="badge en-text">Passport Photo Verified</span>
-        <span class="badge th-text hidden">ยืนยันตัวตนด้วยภาพถ่าย</span>
+        <p><strong class="th-text">วันเกิด:</strong><strong class="en-text hidden">DOB:</strong> 25/02/1973</p>
+        <p><strong class="th-text">สัญชาติ:</strong><strong class="en-text hidden">Nationality:</strong> <span class="th-text">บริติช (สหราชอาณาจักร)</span><span class="en-text hidden">British</span></p>
+        <span class="badge th-text">ยืนยันตัวตนด้วยภาพถ่าย</span>
+        <span class="badge en-text hidden">Passport Photo Verified</span>
       </div>
     </section>
 
@@ -272,24 +272,24 @@
     <section class="card">
       <div class="sec-head red">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
-        <span class="en-text">CRITICAL MEDICAL PROFILE</span>
-        <span class="th-text hidden">ข้อมูลสุขภาพและโรคประจำตัว</span>
+        <span class="th-text">ข้อมูลสุขภาพและโรคประจำตัว</span>
+        <span class="en-text hidden">CRITICAL MEDICAL PROFILE</span>
       </div>
 
       <div class="med-alert">
-        <div class="med-alert-label en-text">Allergies / Drug Reactions</div>
-        <div class="med-alert-label th-text hidden">ประวัติการแพ้ยา / แพ้อาหาร</div>
-        <div class="med-alert-val en-text">NONE KNOWN (NKDA)</div>
-        <div class="med-alert-val th-text hidden">ไม่มีประวัติแพ้ยา (NKDA)</div>
+        <div class="med-alert-label th-text">ประวัติการแพ้ยา / แพ้อาหาร</div>
+        <div class="med-alert-label en-text hidden">Allergies / Drug Reactions</div>
+        <div class="med-alert-val th-text">ไม่มีประวัติแพ้ยา (NKDA)</div>
+        <div class="med-alert-val en-text hidden">NONE KNOWN (NKDA)</div>
       </div>
 
       <div class="med-alert" style="border-left-color: #3b82f6; background: #eff6ff;">
-        <div class="med-alert-label en-text" style="color: #1e40af;">Ongoing Condition</div>
-        <div class="med-alert-label th-text hidden" style="color: #1e40af;">โรคประจำตัว</div>
-        <div class="med-alert-val en-text">Hypertension (High Blood Pressure)</div>
-        <div class="med-alert-val th-text hidden">ความดันโลหิตสูง (Hypertension)</div>
-        <div class="med-sub en-text">Daily Medication: <strong>Amlodipine 10mg</strong> (Oral, Once Daily)</div>
-        <div class="med-sub th-text hidden">ยาที่รับประทานประจำ: <strong>Amlodipine 10 มิลลิกรัม</strong> (ทานวันละ 1 เม็ด)</div>
+        <div class="med-alert-label th-text" style="color: #1e40af;">โรคประจำตัว</div>
+        <div class="med-alert-label en-text hidden" style="color: #1e40af;">Ongoing Condition</div>
+        <div class="med-alert-val th-text">ความดันโลหิตสูง (Hypertension)</div>
+        <div class="med-alert-val en-text hidden">Hypertension (High Blood Pressure)</div>
+        <div class="med-sub th-text">ยาที่รับประทานประจำ: <strong>Amlodipine 10 มิลลิกรัม</strong> (ทานวันละ 1 เม็ด)</div>
+        <div class="med-sub en-text hidden">Daily Medication: <strong>Amlodipine 10mg</strong> (Oral, Once Daily)</div>
       </div>
     </section>
 
@@ -297,19 +297,19 @@
     <section class="card">
       <div class="sec-head red">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-        <span class="en-text">PRIMARY EMERGENCY CONTACT (UK NOK)</span>
-        <span class="th-text hidden">บุคคลติดต่อฉุกเฉิน (บิดา / สหราชอาณาจักร)</span>
+        <span class="th-text">บุคคลติดต่อฉุกเฉิน (บิดา / สหราชอาณาจักร)</span>
+        <span class="en-text hidden">PRIMARY EMERGENCY CONTACT (UK NOK)</span>
       </div>
 
       <div class="policy-row">
-        <span class="policy-label en-text">Name / Relation</span>
-        <span class="policy-label th-text hidden">ชื่อ / ความสัมพันธ์</span>
-        <span class="policy-val">Peter MacMillan <span class="en-text">(Father)</span><span class="th-text hidden">(บิดา)</span></span>
+        <span class="policy-label th-text">ชื่อ / ความสัมพันธ์</span>
+        <span class="policy-label en-text hidden">Name / Relation</span>
+        <span class="policy-val">Peter MacMillan <span class="th-text">(บิดา)</span><span class="en-text hidden">(Father)</span></span>
       </div>
 
       <div class="policy-row">
-        <span class="policy-label en-text">Landline (UK)</span>
-        <span class="policy-label th-text hidden">เบอร์บ้าน (สหราชอาณาจักร)</span>
+        <span class="policy-label th-text">เบอร์บ้าน (สหราชอาณาจักร)</span>
+        <span class="policy-label en-text hidden">Landline (UK)</span>
         <span class="policy-val"><a href="tel:+441603262212" style="color:var(--text-main); text-decoration:none;">+44 1603 262212</a></span>
       </div>
 
@@ -317,15 +317,15 @@
         <!-- Direct WhatsApp Message Button -->
         <a href="https://wa.me/447708931270?text=Hello%20Peter,%20this%20is%20an%20emergency%20regarding%20Iain%20MacMillan" class="action-btn btn-wa" target="_blank">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
-          <span class="en-text">WhatsApp Father (+44 7708 931270)</span>
-          <span class="th-text hidden">ส่ง WhatsApp หาคุณพ่อ</span>
+          <span class="th-text">ส่ง WhatsApp หาคุณพ่อ</span>
+          <span class="en-text hidden">WhatsApp Father (+44 7708 931270)</span>
         </a>
 
         <!-- Direct Cellular Phone Call Button -->
         <a href="tel:+447708931270" class="action-btn btn-phone">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-.99-1.12z"/></svg>
-          <span class="en-text">Call Mobile (+44 7708 931270)</span>
-          <span class="th-text hidden">โทรศัพท์สายตรงหาคุณพ่อ</span>
+          <span class="th-text">โทรศัพท์สายตรงหาคุณพ่อ (+44 7708 931270)</span>
+          <span class="en-text hidden">Call Mobile (+44 7708 931270)</span>
         </a>
       </div>
     </section>
@@ -334,19 +334,19 @@
     <section class="card">
       <div class="sec-head blue">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
-        <span class="en-text">TRAVEL MEDICAL INSURANCE</span>
-        <span class="th-text hidden">ประกันภัยการเดินทาง (รักษาพยาบาล)</span>
+        <span class="th-text">ประกันภัยการเดินทาง (รักษาพยาบาล)</span>
+        <span class="en-text hidden">TRAVEL MEDICAL INSURANCE</span>
       </div>
 
       <div class="policy-row">
-        <span class="policy-label en-text">Insurer</span>
-        <span class="policy-label th-text hidden">บริษัทประกันภัย</span>
+        <span class="policy-label th-text">บริษัทประกันภัย</span>
+        <span class="policy-label en-text hidden">Insurer</span>
         <span class="policy-val">Aviva Signature Travel Insurance</span>
       </div>
 
       <div class="policy-row">
-        <span class="policy-label en-text">Policy Number</span>
-        <span class="policy-label th-text hidden">เลขที่กรมธรรม์</span>
+        <span class="policy-label th-text">เลขที่กรมธรรม์</span>
+        <span class="policy-label en-text hidden">Policy Number</span>
         <span class="policy-val">
           <strong>MTV146900438</strong>
           <button class="copy-pill" onclick="copyText('MTV146900438')">Copy</button>
@@ -354,17 +354,17 @@
       </div>
 
       <div class="policy-row">
-        <span class="policy-label en-text">Cover Type</span>
-        <span class="policy-label th-text hidden">ประเภทความคุ้มครอง</span>
-        <span class="policy-val en-text">Annual Multi-Trip (Auto-Renewing)</span>
-        <span class="policy-val th-text hidden">รายปี หลายเที่ยวบิน (ต่ออายุอัตโนมัติ)</span>
+        <span class="policy-label th-text">ประเภทความคุ้มครอง</span>
+        <span class="policy-label en-text hidden">Cover Type</span>
+        <span class="policy-val th-text">รายปี หลายเที่ยวบิน (ต่ออายุอัตโนมัติ)</span>
+        <span class="policy-val en-text hidden">Annual Multi-Trip (Auto-Renewing)</span>
       </div>
 
       <div class="btn-row">
         <a href="tel:+441603208044" class="action-btn btn-blue">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-.99-1.12z"/></svg>
-          <span class="en-text">Call Aviva 24/7 Assist (+44 1603 208044)</span>
-          <span class="th-text hidden">โทรศูนย์เคลมฉุกเฉิน 24 ชม. (Aviva)</span>
+          <span class="th-text">โทรศูนย์เคลมฉุกเฉิน 24 ชม. (+44 1603 208044)</span>
+          <span class="en-text hidden">Call Aviva 24/7 Assist (+44 1603 208044)</span>
         </a>
       </div>
     </section>
@@ -373,31 +373,31 @@
     <section class="card">
       <div class="sec-head" style="color:#0f172a;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        <span class="en-text">LOCAL THAILAND EMERGENCY CONTACTS</span>
-        <span class="th-text hidden">เบอร์โทรติดต่อฉุกเฉินในประเทศไทย</span>
+        <span class="th-text">เบอร์โทรติดต่อฉุกเฉินในประเทศไทย</span>
+        <span class="en-text hidden">LOCAL THAILAND EMERGENCY CONTACTS</span>
       </div>
 
       <div class="policy-row">
-        <span class="policy-label en-text">British Embassy Bangkok</span>
-        <span class="policy-label th-text hidden">สถานเอกอัครราชทูตอังกฤษ กรุงเทพฯ</span>
+        <span class="policy-label th-text">สถานเอกอัครราชทูตอังกฤษ กรุงเทพฯ</span>
+        <span class="policy-label en-text hidden">British Embassy Bangkok</span>
         <span class="policy-val"><a href="tel:+6623058333" style="color:var(--blue-primary); text-decoration:none; font-weight:800;">+66 2 305 8333</a></span>
       </div>
 
       <div class="policy-row">
-        <span class="policy-label en-text">Thai Medical Emergency (Ambulance)</span>
-        <span class="policy-label th-text hidden">รถพยาบาลฉุกเฉิน (ทั่วไทย)</span>
+        <span class="policy-label th-text">รถพยาบาลฉุกเฉิน (ทั่วไทย)</span>
+        <span class="policy-label en-text hidden">Thai Medical Emergency (Ambulance)</span>
         <span class="policy-val"><a href="tel:1669" style="color:var(--red-primary); text-decoration:none; font-weight:800;">1669</a></span>
       </div>
 
       <div class="policy-row">
-        <span class="policy-label en-text">Tourist Police (English Speaking)</span>
-        <span class="policy-label th-text hidden">ตำรวจท่องเที่ยว</span>
+        <span class="policy-label th-text">ตำรวจท่องเที่ยว</span>
+        <span class="policy-label en-text hidden">Tourist Police (English Speaking)</span>
         <span class="policy-val"><a href="tel:1155" style="color:var(--blue-primary); text-decoration:none; font-weight:800;">1155</a></span>
       </div>
     </section>
 
     <footer class="footer">
-      <p>Iain MacMillan &bull; Personal Emergency Medical Verification</p>
+      <p>Iain MacMillan &bull; ข้อมูลการแพทย์ฉุกเฉิน (Emergency Medical Verification)</p>
       <p>Hosted via GitHub Pages</p>
     </footer>
 
@@ -405,22 +405,22 @@
 
   <script>
     function setLang(lang) {
-      if (lang === 'th') {
-        document.querySelectorAll('.en-text').forEach(el => el.classList.add('hidden'));
-        document.querySelectorAll('.th-text').forEach(el => el.classList.remove('hidden'));
-        document.getElementById('btn-th').classList.add('active');
-        document.getElementById('btn-en').classList.remove('active');
-      } else {
+      if (lang === 'en') {
         document.querySelectorAll('.th-text').forEach(el => el.classList.add('hidden'));
         document.querySelectorAll('.en-text').forEach(el => el.classList.remove('hidden'));
         document.getElementById('btn-en').classList.add('active');
         document.getElementById('btn-th').classList.remove('active');
+      } else {
+        document.querySelectorAll('.en-text').forEach(el => el.classList.add('hidden'));
+        document.querySelectorAll('.th-text').forEach(el => el.classList.remove('hidden'));
+        document.getElementById('btn-th').classList.add('active');
+        document.getElementById('btn-en').classList.remove('active');
       }
     }
 
     function copyText(str) {
       navigator.clipboard.writeText(str).then(() => {
-        alert("Copied to clipboard: " + str);
+        alert("คัดลอกเรียบร้อยแล้ว: " + str);
       });
     }
   </script>
