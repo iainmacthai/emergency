@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Iain MacMillan | Emergency Medical & Insurance Profile</title>
+  <title>Iain MacMillan | Emergency Medical & Travel Insurance Profile</title>
   <meta name="theme-color" content="#b91c1c">
   <style>
     :root {
@@ -13,8 +13,6 @@
       --blue-primary: #1d4ed8;
       --blue-dark: #1e40af;
       --blue-light: #eff6ff;
-      --amber-primary: #d97706;
-      --amber-light: #fffbeb;
       --slate-bg: #f8fafc;
       --slate-card: #ffffff;
       --slate-border: #e2e8f0;
@@ -28,11 +26,11 @@
       background: var(--slate-bg);
       color: var(--text-main);
       line-height: 1.5;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Top Emergency Alert Bar */
+    /* Top Sticky Alert Bar */
     .top-bar {
       background: var(--red-primary);
       color: #ffffff;
@@ -78,20 +76,20 @@
     }
 
     .container {
-      max-width: 520px;
+      max-width: 500px;
       margin: 0 auto;
       padding: 16px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
     }
 
-    /* Card Containers */
+    /* Card Styling */
     .card {
       background: var(--slate-card);
       border-radius: 12px;
       border: 1px solid var(--slate-border);
-      padding: 18px;
+      padding: 16px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     }
 
@@ -102,8 +100,8 @@
       align-items: center;
     }
     .profile-photo {
-      width: 88px;
-      height: 110px;
+      width: 90px;
+      height: 114px;
       border-radius: 8px;
       object-fit: cover;
       object-position: center 20%;
@@ -112,14 +110,14 @@
       flex-shrink: 0;
     }
     .profile-meta h1 {
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 800;
       color: var(--text-main);
-      line-height: 1.25;
+      line-height: 1.2;
       margin-bottom: 4px;
     }
     .profile-meta p {
-      font-size: 13.5px;
+      font-size: 14px;
       color: var(--text-muted);
       font-weight: 600;
       line-height: 1.4;
@@ -140,40 +138,40 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 12px;
-      font-size: 14px;
+      margin-bottom: 10px;
+      font-size: 13.5px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
     .sec-head.red { color: var(--red-primary); }
     .sec-head.blue { color: var(--blue-primary); }
-    .sec-head.amber { color: var(--amber-primary); }
 
-    /* Medical Highlights */
+    /* Medical Alerts */
     .med-alert {
       background: var(--red-light);
       border-left: 4px solid var(--red-primary);
-      padding: 12px 14px;
+      padding: 10px 14px;
       border-radius: 0 8px 8px 0;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .med-alert-label {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 800;
       color: var(--red-dark);
       text-transform: uppercase;
     }
     .med-alert-val {
-      font-size: 14.5px;
+      font-size: 15px;
       font-weight: 700;
       color: var(--text-main);
       margin-top: 1px;
     }
     .med-sub {
-      font-size: 12.5px;
+      font-size: 13px;
       color: var(--text-muted);
       font-weight: 500;
+      margin-top: 2px;
     }
 
     /* Action Buttons */
@@ -181,7 +179,7 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      margin-top: 12px;
+      margin-top: 10px;
     }
     .action-btn {
       display: flex;
@@ -202,7 +200,7 @@
     .btn-wa { background: #16a34a; color: #ffffff; }
     .btn-blue { background: var(--blue-primary); color: #ffffff; }
 
-    /* Policy Breakdown Rows */
+    /* Policy Rows */
     .policy-row {
       display: flex;
       justify-content: space-between;
@@ -229,44 +227,15 @@
     }
     .copy-pill:active { background: #cbd5e1; }
 
-    /* Collapsible Accordion for Car Hire Details */
-    details {
-      background: var(--slate-bg);
-      border-radius: 8px;
-      padding: 10px 14px;
-      margin-top: 10px;
-      border: 1px solid var(--slate-border);
-    }
-    details summary {
-      font-weight: 700;
-      font-size: 13.5px;
-      cursor: pointer;
-      color: var(--text-main);
-      user-select: none;
-    }
-    details[open] summary { margin-bottom: 10px; }
-    .details-content {
-      font-size: 13px;
-      color: var(--text-main);
-      line-height: 1.5;
-    }
-    .trap-item {
-      display: flex;
-      gap: 6px;
-      margin-bottom: 6px;
-      font-size: 12.5px;
-    }
-
-    /* Footer Stamp */
+    /* Footer */
     .footer {
       text-align: center;
       font-size: 11.5px;
       color: var(--text-muted);
-      margin-top: 20px;
+      margin-top: 16px;
       line-height: 1.4;
     }
 
-    /* Utility hide class */
     .hidden { display: none !important; }
   </style>
 </head>
@@ -338,6 +307,12 @@
         <span class="policy-val">Peter MacMillan <span class="en-text">(Father)</span><span class="th-text hidden">(บิดา)</span></span>
       </div>
 
+      <div class="policy-row">
+        <span class="policy-label en-text">Landline (UK)</span>
+        <span class="policy-label th-text hidden">เบอร์บ้าน (สหราชอาณาจักร)</span>
+        <span class="policy-val"><a href="tel:+441603262212" style="color:var(--text-main); text-decoration:none;">+44 1603 262212</a></span>
+      </div>
+
       <div class="btn-row">
         <!-- Direct WhatsApp Message Button -->
         <a href="https://wa.me/447708931270?text=Hello%20Peter,%20this%20is%20an%20emergency%20regarding%20Iain%20MacMillan" class="action-btn btn-wa" target="_blank">
@@ -394,69 +369,7 @@
       </div>
     </section>
 
-    <!-- 5. Eversure Car Hire Excess Cover & Protocols -->
-    <section class="card">
-      <div class="sec-head amber">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-        <span class="en-text">CAR HIRE EXCESS REIMBURSEMENT</span>
-        <span class="th-text hidden">ประกันคุ้มครองค่าเสียหายส่วนแรก (รถเช่า)</span>
-      </div>
-
-      <div class="policy-row">
-        <span class="policy-label en-text">Insurer</span>
-        <span class="policy-label th-text hidden">บริษัทประกันภัย</span>
-        <span class="policy-val">Eversure (Underwriter: AIG UK Ltd)</span>
-      </div>
-
-      <div class="policy-row">
-        <span class="policy-label en-text">Policy Ref</span>
-        <span class="policy-label th-text hidden">เลขที่กรมธรรม์</span>
-        <span class="policy-val">
-          <strong>ERI-8708643-4</strong>
-          <button class="copy-pill" onclick="copyText('ERI-8708643-4')">Copy</button>
-        </span>
-      </div>
-
-      <div class="policy-row">
-        <span class="policy-label en-text">Max Excess Cover</span>
-        <span class="policy-label th-text hidden">วงเงินคุ้มครองค่าเสียหายส่วนแรก</span>
-        <span class="policy-val">£10,000 (Annual Worldwide)</span>
-      </div>
-
-      <!-- Collapsible: Incident Action Rules -->
-      <details>
-        <summary class="en-text">Incident Action Protocol (Keys, Tyres, Accidents)</summary>
-        <summary class="th-text hidden">ขั้นตอนเมื่อเกิดเหตุ (กุญแจหาย, ยางแตก, อุบัติเหตุ)</summary>
-        <div class="details-content">
-          <p><strong>1. Lost Keys / Lockout:</strong> Up to £500. Notify rental company first. Do NOT hire a locksmith without approval (£100 labor max).</p>
-          <p style="margin-top:4px;"><strong>2. Tyres & Glass:</strong> NEVER pay cash. Roadside garage self-pay capped at £200 MAX and strictly requires prior written permission from rental company.</p>
-          <p style="margin-top:4px;"><strong>3. Wrong Fuel:</strong> Up to £1,000 for drain, flush, towing, and taxi. Do NOT turn engine on.</p>
-          <p style="margin-top:4px;"><strong>4. Police Report:</strong> Mandatory for theft, vandalism, hit-and-run, or injury.</p>
-        </div>
-      </details>
-
-      <!-- Collapsible: Fatal Traps to Avoid -->
-      <details>
-        <summary class="en-text">⚠️ 5 Fatal Traps That Void Claims</summary>
-        <summary class="th-text hidden">⚠️ 5 ข้อห้ามสำคัญที่อาจทำให้เคลมประกันไม่ได้</summary>
-        <div class="details-content">
-          <div class="trap-item">❌ <span><strong>Cash Payments:</strong> Any repair or fee paid in cash is 100% excluded.</span></div>
-          <div class="trap-item">❌ <span><strong>Repairs &gt;£200:</strong> Direct garage bills without written rental approval will be rejected.</span></div>
-          <div class="trap-item">❌ <span><strong>No Damage Matrix:</strong> If full excess is charged, you MUST obtain an itemised invoice or official matrix.</span></div>
-          <div class="trap-item">❌ <span><strong>Off-Road:</strong> Driving on unpaved roads, beaches, or tracks is excluded.</span></div>
-          <div class="trap-item">❌ <span><strong>Unnamed Drivers:</strong> Cover is void if anyone not on the rental contract drives.</span></div>
-        </div>
-      </details>
-
-      <div class="btn-row" style="margin-top: 10px;">
-        <a href="tel:+442086496762" class="action-btn" style="background:#475569; color:#fff;">
-          <span class="en-text">Call Eversure Claims (+44 20 8649 6762)</span>
-          <span class="th-text hidden">โทรแผนกเคลมรถเช่า Eversure</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- 6. Diplomatic & Local Thailand Emergency Contacts -->
+    <!-- 5. Diplomatic & Local Thailand Emergency Contacts -->
     <section class="card">
       <div class="sec-head" style="color:#0f172a;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -484,8 +397,8 @@
     </section>
 
     <footer class="footer">
-      <p>Iain MacMillan | Personal Emergency Verification Portal</p>
-      <p>Self-Hosted on GitHub Pages &bull; Updated October 2026</p>
+      <p>Iain MacMillan &bull; Personal Emergency Medical Verification</p>
+      <p>Hosted via GitHub Pages</p>
     </footer>
 
   </main>
